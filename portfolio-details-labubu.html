@@ -1,0 +1,215 @@
+<!-- Save as: portfolio-details-labubu.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Labubu Classifier - Johnny J. Vang</title>
+  <meta content="Machine learning image classifier built with Flask, PyTorch, and ResNet18." name="description">
+  <meta content="Labubu classifier, machine learning, PyTorch, Flask, ResNet18, computer vision" name="keywords">
+
+  <link href="assets/img/robot_favicon_32.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="Johnny J. Vang profile photo" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Johnny J. Vang</a></h1>
+
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/johnnyjvang" class="github" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/jjvang/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
+          <li><a href="index.html#services" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Tools</span></a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Labubu Classifier</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Labubu Classifier</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <h2>Labubu Classifier</h2>
+
+        <p>
+          <a href="https://labubu-classifyer.onrender.com/" target="_blank" rel="noopener noreferrer">
+            Live Application: Labubu Classifier
+          </a>
+        </p>
+
+        <p>
+          A web-based image classification application built with Flask and PyTorch to distinguish authentic Labubu figures
+          from visually similar counterfeit variants using a fine-tuned ResNet18 model.
+        </p>
+
+
+
+
+        <h3>Project Overview</h3>
+        <p>
+          This project was built to explore a practical computer vision problem:
+          <strong>Can a lightweight deployed model help distinguish authentic collectibles from counterfeit lookalikes?</strong>
+        </p>
+
+        <p>
+          In this case, the focus was on identifying authentic Labubu figures versus fake variants often referred to by collectors as “Lafufu.”
+          The result is a complete end-to-end machine learning project that covers data collection, augmentation, model training,
+          web deployment, and real-time inference through an accessible user interface.
+        </p>
+
+        <h3>What Was Built</h3>
+        <ul>
+          <li>Binary image classification model using ResNet18 in PyTorch</li>
+          <li>Flask web application for image upload and prediction</li>
+          <li>Confidence score output for model decisions</li>
+          <li>Deployment pipeline using Render</li>
+          <li>Supporting scripts for dataset collection, augmentation, evaluation, and visualization</li>
+        </ul>
+
+        <h3>Application Demo</h3>
+
+        <h4>Authentic Labubu Prediction</h4>
+        <p>
+          The classifier correctly identifies a Labubu image and returns a confidence score.
+        </p>
+        <img src="https://raw.githubusercontent.com/johnnyjvang/labubu_classifyer/main/static/labubu_correct_identifyer.png" class="img-fluid mb-4" alt="Authentic Labubu Prediction">
+
+        <h4>Counterfeit / Not Labubu Prediction</h4>
+        <p>
+          The model also distinguishes fake or non-Labubu images from authentic examples.
+        </p>
+        <img src="https://raw.githubusercontent.com/johnnyjvang/labubu_classifyer/main/static/not_labubu_correct_identifyer.png" class="img-fluid mb-4" alt="Not Labubu Prediction">
+
+        <h4>Counterfeit Example</h4>
+        <p>
+          Example of a fake Labubu-style figure used to motivate the real-vs-counterfeit classification task.
+        </p>
+        <img src="https://raw.githubusercontent.com/johnnyjvang/labubu_classifyer/main/static/fake_labubu.png" class="img-fluid mb-4" alt="Fake Labubu Example">
+
+        <h4>Rare Variant Example</h4>
+        <p>
+          Additional examples such as rare Labubu variants help show the visual diversity the model may encounter.
+        </p>
+        <img src="https://raw.githubusercontent.com/johnnyjvang/labubu_classifyer/main/static/labubu_rare.png" class="img-fluid mb-4" alt="Rare Labubu Example">
+
+        <h3>System Pipeline</h3>
+        <pre>
+Image upload → Flask app → preprocessing
+            → ResNet18 inference → softmax probabilities
+            → predicted class + confidence score
+        </pre>
+
+        <h3>Key Engineering Decisions</h3>
+        <ul>
+          <li>Used ResNet18 as a lightweight and efficient architecture for binary image classification</li>
+          <li>Built the application in Flask for simple deployment and minimal overhead</li>
+          <li>Used CPU-friendly inference to support low-cost hosted deployment on Render</li>
+          <li>Handled uploaded image preprocessing consistently for real-time predictions</li>
+          <li>Structured the project with separate scripts for training, evaluation, augmentation, and visualization</li>
+        </ul>
+
+        <h3>What I Learned</h3>
+        <ul>
+          <li>How to turn a trained computer vision model into a usable web application</li>
+          <li>How to deploy PyTorch inference workflows in a lightweight production setting</li>
+          <li>How dataset quality and augmentation affect binary classification performance</li>
+          <li>How to design a simple interface that makes ML output understandable to users</li>
+          <li>How to debug deployment and image preprocessing issues in a real hosted application</li>
+        </ul>
+
+        <h3>Why This Matters</h3>
+        <p>
+          This project demonstrates more than model training alone. It shows the ability to build and deploy an end-to-end
+          machine learning system that connects data, inference, web development, and user interaction.
+        </p>
+
+        <p>
+          It also reflects a practical application of computer vision to real-world authenticity and classification problems.
+        </p>
+
+        <h3>GitHub Repository</h3>
+        <p>
+          <a href="https://github.com/johnnyjvang/labubu_classifyer" target="_blank" rel="noopener noreferrer">
+            View Full Project on GitHub
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2026 - JohnnyJVang</span></strong>
+      </div>
+      <div class="credits">
+        <!-- Designed by BootstrapMade -->
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
